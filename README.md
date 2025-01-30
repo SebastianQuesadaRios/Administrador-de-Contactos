@@ -85,23 +85,9 @@ DELETE
 
 Eliminar un contacto
 
-Estructura del Proyecto
 
-/administrador-contactos
-├── backend/      # API en NestJS
-├── frontend/     # Interfaz en Next.js
-├── docker-compose.yml  # Orquestación con Docker
-└── README.md     # Documentación del proyecto
-
-Mejoras Futuras
-
-Autenticación y autorización de usuarios.
-
-Paginación en la lista de contactos.
-
-Implementación de pruebas unitarias.
 
 Autor
 
-Tu Nombre - GitHub
+Sebastian Quesada Rios - GitHub
 
