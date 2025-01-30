@@ -10,7 +10,7 @@ Frontend: Next.js
 
 Base de Datos: MySQL
 
-Contenedores: Docker y Docker Compose
+Contenedores: Docker Compose
 
 Instalación y Ejecución
 
