@@ -16,8 +16,8 @@ Instalación y Ejecución
 
 1. Clonar el Repositorio
 
-git clone https://github.com/tu-usuario/administrador-contactos.git
-cd administrador-contactos
+git clone (https://github.com/SebastianQuesadaRios/Administrador-de-Contactos.git)
+
 
 2. Usar Docker (Recomendado)
 
