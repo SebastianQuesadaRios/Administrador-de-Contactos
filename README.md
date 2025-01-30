@@ -18,7 +18,7 @@ Instalación y Ejecución
 
 git clone https://github.com/SebastianQuesadaRios/Administrador-de-Contactos.git
 
-cd administrador-contactos
+cd Administrador-de-Contactos
 
 ## 2. Usar Docker (Recomendado)
 
