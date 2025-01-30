@@ -1,4 +1,4 @@
-Administrador de Contactos
+### Administrador de Contactos
 
 Este proyecto es una aplicación web para gestionar contactos, desarrollada con NestJS (backend) y Next.js (frontend), usando MySQL como base de datos. Se proporciona un entorno dockerizado para facilitar su despliegue y ejecución.
 
