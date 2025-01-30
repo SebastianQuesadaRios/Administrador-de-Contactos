@@ -14,80 +14,88 @@ Contenedores: Docker y Docker Compose
 
 Instalación y Ejecución
 
-1. Clonar el Repositorio
+## 1. Clonar el Repositorio
 
-git clone (https://github.com/SebastianQuesadaRios/Administrador-de-Contactos.git)
+git clone https://github.com/SebastianQuesadaRios/Administrador-de-Contactos.git
+cd administrador-contactos
+
+## 2. Usar Docker (Recomendado)
 
 
-2. Usar Docker (Recomendado)
-
-Si tienes Docker Desktop instalado, puedes ejecutar la aplicación con un solo comando:
+Si tienes docker-compose instalado, puedes ejecutar la aplicación con un solo comando:
 
 docker-compose up --build
 
 Esto iniciará los contenedores para la base de datos, el backend y el frontend.
 
-Accesos:
+### Requisitos Previos
+| Componente | Versión | Configuración |
+|------------|---------|---------------|
+| MySQL | 8.0 | Host: localhost |
+| | | Puerto: 3306 |
+| | | Usuario: root |
+| | | Contraseña: root |
+| | | Base de datos: contacts_db |
 
-Frontend: http://localhost:3001
+> **Nota**: Asegúrate de tener una instancia de MySQL en ejecución con la configuración correcta antes de iniciar el backend.
 
-Backend: http://localhost:3000
-
-MySQL: localhost:3306 (usuario: user, contraseña: password)
-
-3. Instalación Manual (Sin Docker)
+## 3. Instalación Manual (Sin Docker)
 
 Si prefieres ejecutarlo sin Docker, sigue estos pasos:
 
-Backend
 
-cd backend
-npm install
-npm run start
+### Backend
 
-Frontend
+    cd backend
 
-cd frontend
-npm install
-npm run dev
+    npm install
+
+    npm start:dev
+
+
+
+
+### Frontend
+
+    cd frontend
+
+    npm install
+
+    npm run dev
 
 Asegúrate de tener una instancia de MySQL en ejecución con la configuración correcta.
 
-Endpoints del Backend
+## Endpoints del Backend
 
-Método
+### Endpoints de Contactos
 
-Ruta
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| POST | `/api/contacts` | Crear un nuevo contacto |
+| GET | `/api/contacts` | Listar todos los contactos |
+| PUT | `/api/contacts/:id` | Editar un contacto existente |
+| DELETE | `/api/contacts/:id` | Eliminar un contacto |
 
-Descripción
+### Estructura de Datos
 
-POST
+#### Crear Contacto (POST)
+| Campo | Tipo | Requerido | Descripción |
+|-------|------|-----------|-------------|
+| name | string | Sí | Nombre del contacto (2-50 caracteres) |
+| email | string | Sí | Email único del contacto |
+| phone | string | No | Número telefónico (10-15 caracteres) |
 
-/contacts
+#### Actualizar Contacto (PUT)
+| Campo | Tipo | Requerido | Descripción |
+|-------|------|-----------|-------------|
+| name | string | No | Nuevo nombre del contacto |
+| phone | string | No | Nuevo número telefónico |
 
-Crear un nuevo contacto
-
-GET
-
-/contacts
-
-Listar todos los contactos
-
-PUT
-
-/contacts/:id
-
-Editar un contacto
-
-DELETE
-
-/contacts/:id
-
-Eliminar un contacto
 
 
 
 Autor
 
-Sebastian Quesada Rios - GitHub
+SebastianQuesadaRios - GitHub
+
 
